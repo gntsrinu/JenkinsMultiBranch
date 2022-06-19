@@ -1,10 +1,11 @@
-node('master') 
+node ( 'built-in')
+
 {
-    stage('Continuous Download') 
+    stage('Continuous Download-Master') 
 	{
-    git 'https://github.com/sunildevops77/maven.git'
+    git 'https://github.com/gntsrinu/JenkinsMultiBranch.git'
 	}
-    stage('Continuous Build') 
+    stage('Continuous Build- Master') 
 	{
     sh label: '', script: 'mvn package'
 	}
