@@ -1,10 +1,10 @@
 node('master') 
 {
-    stage('Continuous Download') 
+    stage('Continuous Download-Loans') 
 	{
-    git 'https://github.com/sunildevops77/maven.git'
+    git 'https://github.com/gntsrinu/JenkinsMultiBranch.git'
 	}
-    stage('Continuous Build') 
+    stage('Continuous Build-Loans') 
 	{
     sh label: '', script: 'mvn package'
 	}
